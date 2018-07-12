@@ -8,8 +8,6 @@ ellipseSize = 20
 def setup ():
     size(800, 800)
     
-
-
 def draw():
     background(0, 0, 0)
     fill(0, 156, 159)
@@ -37,6 +35,8 @@ def draw():
     fill(255, 255, 255)
     rect(mouseX, 790, 80, 10, 80)
     
+ #  if xCoordinate <= 80 and yCoordinate == 40
+       
     
     r = random (50, 400)
     global xCoordinate, yCoordinate, xSpeed, ySpeed, ellipseSize
@@ -47,7 +47,7 @@ def draw():
     rightBoundary =800 - ellipseSize /2
     
     if yCoordinate >= bottomBoundary or yCoordinate <= topBoundary:
-      ySpeed = -ySpeed  #reverse ball
+      ySpeed = -ySpeed  
       yCoordinate += ySpeed
     
     if xCoordinate >= rightBoundary or xCoordinate <= leftBoundary:
